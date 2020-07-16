@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="@android:color/transparent"
+
+    >
+
+
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+android:background="#0d0712"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:id="@+id/txttitile"
+    android:background="#4396e9"
+    android:textColor="@android:color/white"
+    android:text="Enter Dispatch Quantity"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textSize="18dp"
+    android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@id/txttitile"
+        android:layout_marginTop="10dp"
+        android:id="@+id/main"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_gravity="left"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/img"
+                android:src="@drawable/bgpaker"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtName"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:layout_margin="1dp"
+                    android:text="Shrit Slim Cut"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCPrice"
+                    android:layout_margin="1dp"
+                    android:textColor="@android:color/black"
+                    android:text="135 Rs"
+                    android:textSize="10dp"/>
+
+
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:layout_width="match_parent"
+                    android:textSize="11dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTPrice"
+                    android:textColor="@android:color/black"
+                    android:text="Category "
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:layout_width="match_parent"
+                    android:textSize="11dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtStripCode"
+                    android:textColor="@android:color/black"
+                    android:text="Strip Code-125  "
+                    android:layout_weight="1"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/sizeLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:text="Size"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtsqnty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    android:text="Qnty "
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtdqnty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    android:text="Dispatch Qnty "
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/buttonround_blue"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:id="@+id/btnSave"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonround_blue"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/buttonround"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:id="@+id/btnSave"
+                android:text="Saves"
+                android:background="@drawable/buttonround"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>-->
+
+
+

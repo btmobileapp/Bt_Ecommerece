@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="3dp"
+
+    tools:context="biyaniparker.com.parker.view.homeuser.userbag.UserBagView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+
+        android:id="@+id/linearId"
+  android:layout_marginBottom="48dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select All"
+                android:id="@+id/chkAll"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-5dp"
+                android:textSize="11dp"
+                android:text=" Bag will get empty after "
+                android:layout_weight="1"
+                android:id="@+id/idtimer" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lmain"
+                android:orientation="vertical"
+
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/nnn"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnViewSummary"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonround"
+            android:textColor="@android:color/white"
+            android:text="View Summary"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRemove"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonround"
+            android:textColor="@android:color/white"
+            android:text="Remove Items"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

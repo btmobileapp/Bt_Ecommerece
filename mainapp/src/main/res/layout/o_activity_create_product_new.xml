@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_margin="5dp"
+   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bground"
+        android:padding="10dp"
+        android:id="@+id/l1"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Product Name"
+                android:textColor="@android:color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:layout_weight="1"
+                android:id="@+id/name"
+                style="@android:style/Widget.Holo.Light.EditText"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Strip Code"
+                android:textColor="@android:color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Strip Code"
+                android:layout_weight="1"
+                android:id="@+id/stripCode"
+                style="@android:style/Widget.Holo.Light.EditText"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Price"
+                android:textColor="@android:color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="price"
+                android:inputType="number"
+                android:id="@+id/edPrice"
+                android:layout_weight="1"
+
+                />
+
+
+
+            <!--<Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingEnd="-5dp"
+                android:paddingRight="-5dp"
+                android:id="@+id/spinnerPrice"
+                android:hint="Price"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                ></Spinner>-->
+        </LinearLayout>
+        <LinearLayout
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Unit Name"
+                android:textColor="@android:color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Unit"
+                android:id="@+id/edUnitName"
+                android:layout_weight="1"
+
+                />
+
+
+
+            <!--<Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingEnd="-5dp"
+                android:paddingRight="-5dp"
+                android:id="@+id/spinnerPrice"
+                android:hint="Price"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                ></Spinner>-->
+        </LinearLayout>
+        <LinearLayout
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Category"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingEnd="-5dp"
+                android:hint="Category"
+                android:paddingRight="-5dp"
+                android:id="@+id/spinnerCategory"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                ></Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_gravity="bottom"
+                android:src="@drawable/g"
+                android:id="@+id/gallary"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_camera"
+                android:id="@+id/img" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_gravity="bottom"
+                android:src="@drawable/c"
+                android:id="@+id/camera"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Size"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quantity"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="36"
+
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:layout_weight="1"
+                    style="@android:style/Widget.Holo.Light.EditText"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="38"
+
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:layout_weight="1"
+                    style="@android:style/Widget.Holo.Light.EditText"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="Size"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            >
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="More Images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_menu_camera"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_menu_camera"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+            <ImageView
+                android:id="@+id/image3"
+                android:src="@drawable/ic_menu_camera"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+            <ImageView
+                android:id="@+id/image4"
+                android:src="@drawable/ic_menu_camera"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+        </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+<CheckBox
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="  Is  Active"
+    android:id="@+id/isActive"
+    android:visibility="gone"
+    />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Product"
+        android:id="@+id/buttonSave"
+        android:layout_below="@id/l1"
+        android:background="@drawable/buttonround"
+
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout></ScrollView>
+</RelativeLayout>

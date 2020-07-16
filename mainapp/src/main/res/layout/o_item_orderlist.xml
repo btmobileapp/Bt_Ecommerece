@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="7dp"
+       android:layout_marginTop="5dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.35"
+           android:text="Shop Name"
+           android:textColor="@android:color/black"
+           android:textSize="18dp"
+           android:id="@+id/txtShop"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.65"
+           android:text="Or No-0104"
+           android:textColor="@android:color/black"
+           android:textSize="18dp"
+           android:id="@+id/txtOrder"/>
+   </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="2dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="Address"
+            android:textSize="15dp"
+            android:id="@+id/txtAddress"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:text="0- aug-2016"
+            android:textSize="15dp"
+            android:id="@+id/txtOrderDate"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

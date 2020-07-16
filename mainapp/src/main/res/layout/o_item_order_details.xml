@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/img"
+            android:src="@drawable/bgpaker"
+            android:layout_weight="1"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtName"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_margin="1dp"
+                android:text="Shrit Slim Cut"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCPrice"
+                android:layout_margin="1dp"
+                android:textColor="@android:color/black"
+                android:text="135 Rs"
+                android:textSize="10dp"/>
+
+
+
+            <TextView
+                android:layout_margin="1dp"
+                android:layout_width="match_parent"
+                android:textSize="11dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTPrice"
+                android:textColor="@android:color/black"
+                android:text="Category Name"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtStripCode"
+                android:layout_margin="1dp"
+                android:textColor="@android:color/black"
+                android:text="135 Rs"
+                android:textSize="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sizeLinear"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Size"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="2"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+
+                    android:id="@+id/txtsqnty"
+                    android:layout_weight="2"
+                    android:text="Qnty "/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionpartial"
+        android:orderInCategory="100"
+        android:title="Partial Dispatch"
+        android:icon="@drawable/pintarest2"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/actionFilter"
+        android:orderInCategory="100"
+        android:title="Filter"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/actionSync"
+        android:orderInCategory="100"
+        android:title="Sync Order"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionDelOrder"
+        android:orderInCategory="100"
+        android:title="Deleted Order List"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionProductSync"
+        android:orderInCategory="100"
+        android:title="Product Sync "
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="never"/>
+
+
+
+
+
+</menu>

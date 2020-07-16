@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/lMain"
+       android:visibility="gone"
+       android:orientation="horizontal">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_margin="10dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Shop Name"
+               android:textColor="@android:color/black"
+               android:textSize="18dp"
+               android:id="@+id/txtShopName"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Address"
+               android:textColor="@android:color/black"
+               android:textSize="15dp"
+               android:id="@+id/txtAddress"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Total Amount :"
+               android:id="@+id/txtGAmount"
+               android:textColor="@android:color/black"
+               android:textSize="15dp"
+               />
+
+
+       </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order No -"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:id="@+id/txtOrderNo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8-Aug-2016"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:id="@+id/txtOrderDate"
+            />
+
+
+        </LinearLayout>
+
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lbottom"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="VIEW DISPATCH SUMMARY"
+
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonround"
+            android:id="@+id/btnDispachSummary"/>
+
+
+
+    </LinearLayout>
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+
+        android:layout_below="@id/lMain"
+        android:layout_above="@id/lbottom"
+        >-->
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lMain"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/lbottom"
+            android:id="@+id/listView">
+
+
+        </ListView>
+
+ <!--   </ScrollView>-->
+
+
+
+
+</RelativeLayout>

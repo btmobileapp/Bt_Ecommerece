@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="7dp"
+       android:layout_marginTop="5dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.35"
+           android:text="Or No : 121 "
+           android:textColor="@android:color/black"
+           android:textSize="18dp"
+           android:id="@+id/txtOrderNo"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.65"
+           android:text="21-aug-16"
+           android:textColor="@android:color/black"
+           android:textSize="18dp"
+           android:id="@+id/txtOrderDate"/>
+   </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="2dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="Total Amt :"
+            android:textSize="15dp"
+            android:id="@+id/txtTAmt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:text="Total Qnty :"
+            android:textSize="15dp"
+            android:id="@+id/txtTQnty"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="2dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="mahalaxmi apperal:"
+            android:textSize="15dp"
+
+            android:id="@+id/txtShopName"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:text="Or Status :"
+            android:textSize="15dp"
+            android:id="@+id/txtStatus"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

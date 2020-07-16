@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="biyaniparker.com.parker.view.homeuser.UserHomeScreen"
+    tools:showIn="@layout/app_bar_user_home_screen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="50dp">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="T-Shirts"
+                android:id="@+id/btnshirt"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                android:background="#f91d1016"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="T-Shirts"
+                android:id="@+id/btntshirt"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                android:background="#0d0729"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pants"
+                android:id="@+id/btnpants"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@android:color/white"
+                android:background="#f9363019"
+                android:layout_margin="5dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Accessories"
+                android:id="@+id/btnaccessories"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                android:background="#f9363019"
+
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/btn5"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                android:background="#f92b0d40"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/btn6"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                android:background="#f91d1016"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:numColumns="3"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

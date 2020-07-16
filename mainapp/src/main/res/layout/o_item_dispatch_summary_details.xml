@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Category"
+            android:textColor="@android:color/black"
+            android:id="@+id/catName"
+            android:layout_weight="0.2"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price "
+            android:id="@+id/Price"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size "
+            android:id="@+id/Size"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity "
+            android:gravity="center"
+            android:id="@+id/Qnatity"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.3"/>
+
+    </LinearLayout>
+</LinearLayout>
