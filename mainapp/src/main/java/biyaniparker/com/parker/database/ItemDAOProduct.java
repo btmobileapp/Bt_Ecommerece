@@ -4,17 +4,14 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
-
 import biyaniparker.com.parker.beans.CategoryBean;
 import biyaniparker.com.parker.beans.ProductBean;
 import biyaniparker.com.parker.utilities.CommonUtilities;
 import biyaniparker.com.parker.utilities.UserUtilities;
-
 /**
  * Created by bt on 08/13/2016.
  */
@@ -27,7 +24,6 @@ public class ItemDAOProduct
         this.context=context;
        // SQLiteDatabase db=new DBHELPER(context).getWritableDatabase();
     }
-
 
     public long getLatestChangedProduct()
     {
@@ -42,18 +38,16 @@ public class ItemDAOProduct
                  int i = 0;
                  while (i < c.getCount())
                  {
-                      long rt=  c.getLong(c.getColumnIndex("latest"));
+                      long rt = c.getLong(c.getColumnIndex("latest"));
                        i++;
                        db.close();
                      return  rt;
                  }
              }
          }
-
       }
       catch (Exception e)
       {}
-
       return 0;
     }
 
@@ -65,7 +59,6 @@ public class ItemDAOProduct
 
        if(c!=null)
        {
-
            if(c.moveToFirst())
            {
                int i=0;
@@ -109,7 +102,6 @@ public class ItemDAOProduct
 
         if(c!=null)
         {
-
             if(c.moveToFirst())
             {
                 int i=0;
@@ -177,8 +169,6 @@ public class ItemDAOProduct
     }
 
 
-
-
     public void update(ProductBean productBean)
     {
         SQLiteDatabase db=new DBHELPER(context).getWritableDatabase();
@@ -220,7 +210,6 @@ public class ItemDAOProduct
     }
 
     public ArrayList<ProductBean> getProductsByCatId(int catid) {
-
         ArrayList<ProductBean> list=new ArrayList<ProductBean>();
         SQLiteDatabase db=new DBHELPER(context).getReadableDatabase();
         Cursor c= db.rawQuery("SELECT * FROM Product where clientId=" + UserUtilities.getClientId(context)+" and DeleteStatus='false' and CategoryId="+catid, null);
@@ -271,7 +260,6 @@ public class ItemDAOProduct
 
         if(c!=null)
         {
-
             if(c.moveToFirst())
             {
                 int i=0;
@@ -323,7 +311,6 @@ public class ItemDAOProduct
 
         if(c!=null)
         {
-
             if(c.moveToFirst())
             {
                 int i=0;

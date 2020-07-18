@@ -4,11 +4,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-
 import biyaniparker.com.parker.beans.SizeDetailBean;
 import biyaniparker.com.parker.beans.SizeMaster;
 

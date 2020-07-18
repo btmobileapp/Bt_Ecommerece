@@ -4,11 +4,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import biyaniparker.com.parker.LaunchActivity;
 import biyaniparker.com.parker.R;
 import biyaniparker.com.parker.bal.ModuleSync;
@@ -28,7 +25,6 @@ public class SyncActivity extends AppCompatActivity implements DownloadUtility
         setContentView(R.layout.activity_sync);
         moduleSync=new ModuleSync(this);
         moduleSync.sync();
-
     }
 
     @Override

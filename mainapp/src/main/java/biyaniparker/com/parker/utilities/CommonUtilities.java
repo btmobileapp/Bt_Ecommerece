@@ -10,13 +10,11 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-
 import java.io.File;
 import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
 import biyaniparker.com.parker.database.ItemDAOCategory;
 import biyaniparker.com.parker.database.ItemDAODispatch;
 import biyaniparker.com.parker.database.ItemDAOOrder;

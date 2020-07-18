@@ -1,4 +1,5 @@
 package com.example.myapplication;
 
-public class Temp1 {
+public class Temp1{
+
 }

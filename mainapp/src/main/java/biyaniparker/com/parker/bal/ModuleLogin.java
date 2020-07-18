@@ -3,9 +3,7 @@ package biyaniparker.com.parker.bal;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.Toast;
-
 import org.json.JSONObject;
-
 import biyaniparker.com.parker.utilities.CommonUtilities;
 import biyaniparker.com.parker.utilities.DownloadUtility;
 import biyaniparker.com.parker.utilities.serverutilities.AsyncUtilities;
@@ -22,16 +20,13 @@ public class ModuleLogin implements DownloadUtility
         this.context=context;
     }
 
-
     // Login function from server
     public void performLogin(String username, String pass)
     {
-
         // requset code ->   1
         String url=CommonUtilities.URL+"UtilService.svc/getUserDetail?username="+username+"&password="+pass+"&ClientId=1";
         AsyncUtilities serverAsync=new AsyncUtilities(context,false, url ,"",1,this);
         serverAsync.execute();
-
     }
 
     @Override
@@ -56,11 +51,9 @@ public class ModuleLogin implements DownloadUtility
                 downloadUtility.onComplete("Server Communication Failed", 1, responseCode);
             }
         }
-
     }
 
     private boolean parseUserData(String str) {
-
         try
         {
             JSONObject jsonObject=new JSONObject(str);
@@ -72,8 +65,6 @@ public class ModuleLogin implements DownloadUtility
                 edit.commit();
                 return true;
             }
-
-
         }
         catch (Exception e)
         {

@@ -4,21 +4,16 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Environment;
-
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import com.google.android.material.textfield.TextInputLayout;
-
 import java.io.File;
-
 import biyaniparker.com.parker.MainActivity;
 import biyaniparker.com.parker.R;
 import biyaniparker.com.parker.bal.ModuleLogin;
@@ -48,17 +43,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         CommonUtilities.hideatInItInputBoard(this);
 
-
-
         File myDir = new File(Environment.getExternalStorageDirectory().toString()+"/parker" );
         myDir.mkdirs();
-
 
         txtAddress=(TextView)findViewById(R.id.txtAddress);
         txt=(TextView)findViewById(R.id.txt);
         txtAddress.setText(CommonUtilities.AdminAdress);
         txt.setText(CommonUtilities.AdminContact);
-
     }
 
     private void inItUi()
@@ -75,9 +66,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         CommonUtilities.hideSoftKeyBord(this);
         String userid=edUserId.getText().toString();
         String pass=edPassword.getText().toString();
+
         if(userid.trim().equalsIgnoreCase("")||pass.trim().equalsIgnoreCase(""))
         {
-                     Toast.makeText(this,"Please enter username and password ",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Please enter username and password ",Toast.LENGTH_LONG).show();
         }
        else
         {
@@ -92,7 +84,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-
     @Override
     public void onComplete(String str, int requestCode,int responseCode)
     {
@@ -104,9 +95,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     //if(UserUtilities.getUserType(this).equalsIgnoreCase("Admin"))
                     if(true)
                     {
-
-
-
                         SharedPreferences sh=getSharedPreferences("Sync",MODE_PRIVATE);
                         sh.edit().putBoolean("Sync",false).commit();
 
@@ -126,6 +114,5 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         {
             Toast.makeText(this, "Server Communication Failed", Toast.LENGTH_LONG).show();
         }
-
     }
 }

@@ -9,25 +9,19 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Environment;
 import android.os.Handler;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
-
 import java.io.File;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-
 import biyaniparker.com.parker.services.ProductSyncService;
 import biyaniparker.com.parker.utilities.CommonUtilities;
 import biyaniparker.com.parker.utilities.UserUtilities;
@@ -38,7 +32,6 @@ import biyaniparker.com.parker.view.login.LoginActivity;
 import biyaniparker.com.parker.view.login.SyncActivity;
 
 public class LaunchActivity extends AppCompatActivity {
-
     Handler h;
     ImageView imageView3;
     @Override
@@ -67,10 +60,7 @@ public class LaunchActivity extends AppCompatActivity {
 
                 ,
                 imageView3, doption, animateFirstListener);
-
-
         h=new Handler();
-
 
         if(new ConnectionDetector(this).isConnectingToInternet())
         {
@@ -80,7 +70,6 @@ public class LaunchActivity extends AppCompatActivity {
         {
             if(UserUtilities.getUserId(LaunchActivity.this)==0)
             {
-
                 AlertDialog.Builder app = new AlertDialog.Builder(this);
                 app.setTitle(getString(R.string.app_name));
                 app.setMessage("Check Internet Connection ");
@@ -122,9 +111,7 @@ public class LaunchActivity extends AppCompatActivity {
               //  app.show();
                 h.postDelayed(r, 1000);
             }
-
         }
-
 
 
         //    Run Service To Sync Data
@@ -133,18 +120,13 @@ public class LaunchActivity extends AppCompatActivity {
          //   startService(new Intent(this, SyncServiceBg.class));
         }
 
-
-
         String root = Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES).toString();
 
-
         File myDir = new File(root+"/parkerreport" );
         myDir.mkdirs();
-
-
-
     }
+
     Runnable r=new Runnable()
     {
         @Override
@@ -209,21 +191,8 @@ public class LaunchActivity extends AppCompatActivity {
                     overridePendingTransition(R.animator.pull_in_right, R.animator.push_out_left);
                 }
             }
-
         }
     };
-
-
-
-
-
-
-
-
-
-
-
-
 
     //*********************Copy This  ******************
     DisplayImageOptions doption = null;
